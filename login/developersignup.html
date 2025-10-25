@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FreelanceHub | Developer Signup</title>
+  <link rel="stylesheet" href="/css/developersignup.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+
+  <div class="signup-container">
+    <div class="signup-left">
+      <img src="/assets/logo.png" alt="FreelanceHub Logo">
+      <h2>Become a Developer<br> on FreelanceHub</h2>
+      <p>Show your skills and start earning globally. <b>100% Free!</b></p>
+    </div>
+
+    <div class="signup-right">
+      <h3>Create Account As Developer</h3>
+      <form onsubmit="registerDeveloper(event)">
+        
+        <div class="mb-3">
+          <label>Full Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your full name">
+        </div>
+
+        <div class="mb-3">
+          <label>Email</label>
+          <input type="text" class="form-control" id="email" placeholder="Enter your email">
+        </div>
+
+        <div class="mb-3">
+          <label>Password</label>
+          <input type="password" class="form-control" id="password" placeholder="Create password">
+        </div>
+
+        <div class="mb-3">
+          <label>Confirm Password</label>
+          <input type="password" class="form-control" id="confirmPassword" placeholder="Re-enter password">
+        </div>
+
+        <div class="mb-3">
+          <label>Age</label>
+          <input type="number" class="form-control" id="age" placeholder="Enter your age">
+        </div>
+
+        <div class="mb-3">
+          <label>Profession</label>
+          <select class="form-control" id="profession">
+            <option id="option" value="">Select Profession</option>
+            <option>Web Developer</option>
+            <option>App Developer</option>
+            <option>Graphic Designer</option>
+            <option>UI/UX Designer</option>
+            <option>SEO Expert</option>
+            <option>Video Editor</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label>Skills</label>
+          <input type="text" class="form-control" id="skills" placeholder="e.g. HTML, CSS, JS, React, Node.js">
+        </div>
+
+        <div class="mb-3">
+          <label>Education</label>
+          <input type="text" class="form-control" id="education" placeholder="e.g. BS Computer Science, SMIT">
+        </div>
+
+        <div class="mb-3">
+          <label>Experience (in years)</label>
+          <input type="number" class="form-control" id="experience" placeholder="e.g. 2">
+        </div>
+
+        <div class="mb-3">
+          <label>Projects</label>
+          <textarea class="form-control" id="projects" rows="3" placeholder="Mention your top 2-3 projects or portfolio link"></textarea>
+        </div>
+
+        <div class="mb-3">
+          <label>About You</label>
+          <textarea class="form-control" id="about" rows="3" placeholder="Write a short bio about your experience and goals"></textarea>
+        </div>
+
+        <button type="submit" class="btn-main w-100 mt-2">Sign Up</button>
+      </form>
+
+      <div class="login-text">
+        Already have an account? <a href="/login/login.html">Login</a>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+<script src="/javascript/developersignup.js"></script>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client Dashboard | FreelanceHub</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <h2 class="logo">FreelanceHub</h2>
+      <ul class="menu">
+        <li class="active">🏠 Dashboard</li>
+        <li>📁 My Projects</li>
+        <li>💼 Hired Developers</li>
+        <li>💬 Messages</li>
+        <li>⚙️ Settings</li>
+      </ul>
+      <button class="logout-btn">Logout</button>
+    </aside>
+
+    <main class="main-content">
+      <header class="dashboard-header">
+        <h3>Welcome, Client 👋</h3>
+        <span class="balance">💰 Balance: $1,200</span>
+      </header>
+
+      <section class="cards-grid">
+        <div class="card-box">
+          <h5>Active Projects</h5>
+          <h2>4</h2>
+        </div>
+        <div class="card-box">
+          <h5>Completed Projects</h5>
+          <h2>12</h2>
+        </div>
+        <div class="card-box">
+          <h5>Developers Hired</h5>
+          <h2>8</h2>
+        </div>
+        <div class="card-box">
+          <h5>Pending Proposals</h5>
+          <h2>3</h2>
+        </div>
+      </section>
+
+      <section class="table-section">
+        <h4>Recent Projects</h4>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Project Title</th>
+              <th>Status</th>
+              <th>Developer</th>
+              <th>Budget</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Website Redesign</td>
+              <td><span class="status ongoing">Ongoing</span></td>
+              <td>Meer Quais</td>
+              <td>$500</td>
+            </tr>
+            <tr>
+              <td>Mobile App UI</td>
+              <td><span class="status completed">Completed</span></td>
+              <td>Minhaj Wahid</td>
+              <td>$800</td>
+            </tr>
+            <tr>
+              <td>Landing Page</td>
+              <td><span class="status pending">Pending</span></td>
+              <td>Ali Khan</td>
+              <td>$300</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+<script src="/javascript/dashboard.js"></script>
+</html>

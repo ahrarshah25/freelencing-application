@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FreelanceHub | Developer Settings</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/setting.css">
+</head>
+<body>
+
+  <div class="settings-container">
+    <h2 id="developerName" class="page-title">Developer Profile Settings</h2>
+    <p class="subtitle">Update your personal and professional information</p>
+
+    <div class="settings-form">
+      <form id="developerSettingsForm">
+
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label>Full Name</label>
+            <input type="text" class="form-control" id="devName" placeholder="Enter your full name">
+          </div>
+          <div class="col-md-6 mb-3">
+            <label>Email</label>
+            <input type="email" class="form-control" id="devEmail" placeholder="Enter your email">
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label>About</label>
+          <textarea class="form-control" id="devAbout" rows="4" placeholder="Tell something about yourself"></textarea>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label>Age</label>
+            <input type="number" class="form-control" id="devAge" placeholder="Enter your age">
+          </div>
+          <div class="col-md-6 mb-3">
+            <label>Profession</label>
+            <select class="form-control" id="devProfession">
+              <option value="">Select Profession</option>
+              <option>Full Stack Developer</option>
+              <option>Frontend Developer</option>
+              <option>Backend Developer</option>
+              <option>Graphic Designer</option>
+              <option>App Developer</option>
+              <option>Content Writer</option>
+              <option>Video Editor</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label>Skills</label>
+          <input type="text" class="form-control" id="devSkills" placeholder="e.g. HTML, CSS, JavaScript, React, Node.js">
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label>Projects</label>
+            <input type="number" class="form-control" id="devProjects" placeholder="Enter number of completed projects">
+          </div>
+          <div class="col-md-6 mb-3">
+            <label>Experience (Years)</label>
+            <input type="number" class="form-control" id="devExperience" placeholder="e.g. 2">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label>Education</label>
+            <input type="text" class="form-control" id="devEducation" placeholder="e.g. BS Computer Science — SMIT">
+          </div>
+          <div class="col-md-6 mb-3">
+            <label>Location</label>
+            <input type="text" class="form-control" id="devLocation" placeholder="e.g. Karachi, Pakistan">
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label>Languages</label>
+          <input type="text" class="form-control" id="devLanguages" placeholder="e.g. English, Urdu">
+        </div>
+
+        <div class="mb-3">
+          <label>Total Earnings (PKR)</label>
+          <input type="number" class="form-control" id="devEarnings" placeholder="e.g. 68838">
+        </div>
+
+        <div class="text-center mt-4">
+          <button type="button" class="btn-save" onclick="saveDeveloperSettings()">Save Changes</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+<script src="/javascript/settings.js"></script>
+</html>

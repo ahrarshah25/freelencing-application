@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Profile | FreelanceHub</title>
+  <link rel="stylesheet" href="/css/profile.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+
+  <div class="profile-page">
+    <div class="profile-top card">
+      <div class="profile-left">
+        <img src="/assets/logo.png" alt="Profile" id="profileAvatar" class="avatar">
+        <div class="basic-info">
+          <h2 id="devName">Meer Quais</h2>
+          <p class="muted" id="devProfession">Full Stack Developer • SMIT Trainer</p>
+          <div class="contact-row">
+            <a href="mailto:meer@example.com" id="devEmail" class="email-link">meer@example.com</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="profile-right">
+        <div class="stats">
+          <div class="stat">
+            <div class="num" id="statProjects">11</div>
+            <div class="label">Projects</div>
+          </div>
+          <div class="stat">
+            <div class="num" id="statEarnings">₨ 68,838</div>
+            <div class="label">Earnings</div>
+          </div>
+          <div class="stat">
+            <div class="num" id="statExperience">5y</div>
+            <div class="label">Experience</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-end mb-3">
+      <button onclick="editProfile()" class="btn btn-outline-primary">Edit Profile</button>
+
+    </div>
+    <div class="profile-body">
+      <div class="left-col">
+
+        <section class="card about-card">
+          <h5>About</h5>
+          <p id="devAbout">Passionate full-stack developer with experience building scalable web applications using modern JavaScript frameworks and Node.js. I enjoy turning ideas into products and mentoring junior developers.</p>
+        </section>
+
+        <section class="card skills-card">
+          <h5>Skills</h5>
+          <div id="devSkills" class="chips">
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">React</span>
+            <span class="chip">Node.js</span>
+          </div>
+        </section>
+
+        <section class="card projects-card">
+          <h5>Projects</h5>
+
+          <div class="project-item">
+            <div class="project-left">
+              <h6>Landing page design for BlueTech</h6>
+              <p class="muted small">Role: Frontend • Completed: Oct 2025</p>
+            </div>
+            <div class="project-right">
+              <span class="badge bg-success">Completed</span>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <div class="project-left">
+              <h6>Mobile App UI for Foodify</h6>
+              <p class="muted small">Role: UI/UX • In Review</p>
+            </div>
+            <div class="project-right">
+              <span class="badge bg-warning text-dark">Review</span>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <div class="project-left">
+              <h6>E-commerce Dashboard (Admin)</h6>
+              <p class="muted small">Role: Full Stack • Ongoing</p>
+            </div>
+            <div class="project-right">
+              <span class="badge bg-primary">Ongoing</span>
+            </div>
+          </div>
+
+        </section>
+
+      </div> 
+
+      <aside class="right-col">
+
+        <section class="card contact-card text-center">
+          <h6>Contact</h6>
+          <p class="muted">Available for freelance • Response time: 24h</p>
+          <a id="hireBtn" class="btn-main btn w-100 mb-2" href="mailto:meer@example.com">Hire Me</a>
+          <a id="messageBtn" class="btn btn-outline-primary w-100" href="#">Send Message</a>
+        </section>
+
+        <section class="card details-card">
+          <h6>Profile Details</h6>
+          <ul class="details-list">
+            <li><strong>Email:</strong> <span id="detailEmail">meer@example.com</span></li>
+            <li><strong>Age:</strong> <span id="detailAge">32</span></li>
+            <li><strong>Education:</strong> <span id="detailEducation">BS Computer Science — SMIT</span></li>
+            <li><strong>Location:</strong> <span id="detailLocation">Karachi, Pakistan</span></li>
+            <li><strong>Languages:</strong> <span id="detailLang">English, Urdu</span></li>
+          </ul>
+        </section>
+
+        <section class="card activity-card">
+          <h6>Recent Activity</h6>
+          <div class="activity-item small muted">Oct 23, 2025 — Replied to client message (BlueTech)</div>
+          <div class="activity-item small muted">Oct 20, 2025 — Milestone received (₨ 25,000)</div>
+          <div class="activity-item small muted">Oct 18, 2025 — Proposal sent to LocalMart</div>
+        </section>
+
+      </aside>
+    </div>
+
+  </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+<script src="/javascript/profile.js"></script>
+</html>
