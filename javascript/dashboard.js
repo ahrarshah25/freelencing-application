@@ -12,7 +12,26 @@ if(userFound !== "true"){
     window.location.href = "/dashboard/developer/dashboard.html"
 }
 
-function logout(){
-    localStorage.removeItem("userFound" , "ture");
-    window.location.href = "index.html";
+function myProjects(){
+    window.location.href = "/dashboard/client/projects.html"
+};
+
+function hiredDevelopers(){
+    window.location.href = "/dashboard/client/hired.html"
+};
+
+function clientBalanceAdd(){
+    window.location.href = "/dashboard/client/balance.html"
 }
+
+function logout(){
+    alert("Logout Successfully!")
+    localStorage.removeItem("userFound" , "ture");
+    window.location.href = "/index.html";
+}
+
+var userName = localStorage.getItem("userName");
+var clientName = document.getElementById("clientName").innerText = "Welcome, " + userName + " 👋";
+
+var amount = localStorage.getItem("amount");
+var userBalance = document.getElementById("userBalance").innerText = "💰 Balance: " + amount;

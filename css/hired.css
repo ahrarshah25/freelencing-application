@@ -1,0 +1,96 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f5f7fb;
+  margin: 0;
+  padding: 20px;
+  color: #222;
+}
+
+.hired-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.hired-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.hired-header h2 {
+  font-weight: 600;
+  color: #0d47a1;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 14px;
+}
+
+.dev-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.dev-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+}
+
+.dev-card:hover {
+  transform: translateY(-5px);
+}
+
+.dev-top {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.dev-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.dev-info h5 {
+  margin: 0;
+  color: #0d47a1;
+  font-weight: 600;
+}
+
+.dev-info p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.dev-body p {
+  font-size: 14px;
+  color: #333;
+  margin: 5px 0;
+}
+
+.dev-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.btn {
+  font-size: 13px;
+  border-radius: 6px;
+  padding: 6px 14px;
+}
+
+@media (max-width: 600px) {
+  .dev-actions {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

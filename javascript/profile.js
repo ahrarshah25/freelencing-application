@@ -18,18 +18,18 @@ function editProfile() {
 }
 
 window.onload = function () {
-    var userName = localStorage.getItem("userName") || "Meer Quais";
-    var userEmail = localStorage.getItem("userEmail") || "meer@example.com";
-    var userAbout = localStorage.getItem("userAbout") || "Passionate full-stack developer...";
-    var userAge = localStorage.getItem("userAge") || "32";
-    var devProfession = localStorage.getItem("devProfession") || "Full Stack Developer • SMIT Trainer";
-    var userSkills = localStorage.getItem("userSkills") || "HTML, CSS, JS, React, Node.js";
-    var userProjects = localStorage.getItem("userProjects") || "11";
-    var userExperience = localStorage.getItem("userExperience") || "5";
-    var userEducation = localStorage.getItem("userEducation") || "BS Computer Science — SMIT";
-    var devLocation = localStorage.getItem("devLocation") || "Karachi, Pakistan";
-    var devLanguages = localStorage.getItem("devLanguages") || "English, Urdu";
-    var devEarnings = localStorage.getItem("devEarnings") || "68838";
+    var userName = localStorage.getItem("userName");
+    var userEmail = localStorage.getItem("userEmail")
+    var userAbout = localStorage.getItem("userAbout")
+    var userAge = localStorage.getItem("userAge")
+    var devProfession = localStorage.getItem("devProfession")
+    var userSkills = localStorage.getItem("userSkills")
+    var userProjects = localStorage.getItem("userProjects")
+    var userExperience = localStorage.getItem("userExperience")
+    var userEducation = localStorage.getItem("userEducation")
+    var devLocation = localStorage.getItem("devLocation")
+    var devLanguages = localStorage.getItem("devLanguages")
+    var devEarnings = localStorage.getItem("devEarnings")
 
     document.getElementById("devName").innerText = userName;
     document.getElementById("devEmail").innerText = userEmail;

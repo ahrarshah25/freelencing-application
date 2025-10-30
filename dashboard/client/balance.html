@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Balance | FreelanceHub</title>
+  <link rel="stylesheet" href="/css/balance.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+  <div class="balance-container">
+    <header class="balance-header text-center mb-4">
+      <h2>Add Balance to Your Account</h2>
+      <p class="muted">Securely top-up your FreelanceHub wallet via Easypaisa</p>
+    </header>
+
+    <section class="balance-info card p-4 mb-4">
+      <h5>Payment Instructions</h5>
+      <p class="text-muted">To add funds, please send the desired amount to the following Easypaisa account:</p>
+      <ul class="info-list">
+        <li><strong>Account Name:</strong> Ahrar Shah</li>
+        <li><strong>Mobile Number:</strong> +92 300 1234567</li>
+        <li><strong>Payment Type:</strong> Easypaisa Transfer</li>
+      </ul>
+      <p class="small text-secondary mt-2">Once payment is completed, enter your transaction ID and amount below. Your balance will be verified<strong> automatically when you send it.</strong>.</p>
+    </section>
+
+    <section class="balance-form card p-4">
+      <form id="balanceForm">
+        <div class="mb-3">
+          <label for="transactionId" class="form-label">Easypaisa Transaction ID</label>
+          <input type="text" class="form-control" id="transactionId" placeholder="Enter your transaction ID">
+        </div>
+
+        <div class="mb-3">
+          <label for="amount" class="form-label">Amount (PKR)</label>
+          <input type="number" class="form-control" id="amount" placeholder="Enter amount sent">
+        </div>
+
+        <div class="text-center mt-4">
+          <button type="submit" onclick="clientBalance(event)" class="btn btn-success px-5 py-2">Submit Payment</button>
+        </div>
+      </form>
+    </section>
+
+    <footer class="text-center mt-4">
+      <p class="small text-muted">Need help? Contact support@freelancehub.pk</p>
+    </footer>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+<script src="/javascript/balance.js"></script>
+</html>

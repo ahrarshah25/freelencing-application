@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create New Project | FreelanceHub</title>
+  <link rel="stylesheet" href="/css/newproject.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container mt-5 mb-5">
+    <div class="card p-4 shadow-lg border-0 rounded-4">
+      <h3 class="text-center mb-3 fw-semibold text-primary">Post a New Project</h3>
+      <p class="text-center text-muted mb-4">Fill out the details below to hire the best developer for your project</p>
+
+      <form>
+        <div class="mb-3">
+          <label class="form-label">Project Name</label>
+          <input type="text" class="form-control" id="projectName" placeholder="Enter project title">
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Short Description</label>
+          <textarea class="form-control" id="projectDesc" rows="4" placeholder="Briefly describe your project"></textarea>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label class="form-label">Select Developer</label>
+            <select class="form-select" id="projectDeveloper">
+              <option value="">Choose Developer</option>
+              <option>Sofia Khan</option>
+              <option>Umair Kashan</option>
+              <option>Kashan Adnan</option>
+              <option>Minhaj Wahid</option>
+              <option>Meer Quais</option>
+              <option>Saad Ahmed</option>
+              <option>Ali Khan</option>
+            </select>
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <label class="form-label">Budget (PKR)</label>
+            <input type="number" class="form-control" id="projectBudget" placeholder="e.g. 50000">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label class="form-label">Deadline</label>
+            <input type="date" class="form-control" id="projectDeadline">
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <label class="form-label">Preferred Language / Framework</label>
+            <input type="text" class="form-control" id="projectLang" placeholder="e.g. React, Node.js, Laravel">
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Sample / Reference Link (Optional)</label>
+          <input type="url" class="form-control" id="projectSample" placeholder="https://example.com/sample">
+        </div>
+
+        <div class="text-center mt-4">
+          <button onclick="createProject(event)" class="btn btn-primary px-5 py-2">Create Project</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+<script src="/javascript/newproject.js"></script>
+</html>
